@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Franklin Ikeh
+	email = ikehfranklind3c0d3r@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	editor = vim
