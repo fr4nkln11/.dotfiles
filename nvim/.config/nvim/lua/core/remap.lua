@@ -1,10 +1,8 @@
 vim.g.mapleader = " "
 
-vim.keymap.set('n', '<leader>x', '<cmd>bd<CR>')
 vim.keymap.set('v', '<leader>y', '"+y')
 
-vim.keymap.set('n', '<leader>b', '<cmd>BufferLinePick<CR>')
-
+-- window movement keymaps
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', {noremap = true})
 
 vim.api.nvim_set_keymap('t', '<A-h>', '<C-\\><C-n><C-w>h', {noremap = true})

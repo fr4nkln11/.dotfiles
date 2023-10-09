@@ -21,6 +21,7 @@ local plugins = {
 		'nvim-telescope/telescope.nvim', version = '0.1.2',
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
+	'rebelot/kanagawa.nvim',
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
