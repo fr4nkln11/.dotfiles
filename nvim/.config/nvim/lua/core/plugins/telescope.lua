@@ -15,5 +15,19 @@ require('telescope').setup{
 				["<M-p>"] = action_layout.toggle_preview
 			},
 		},
-	}
+	},
+	pickers = {
+		find_files = {
+			theme = "dropdown",
+			previewer = false,
+		},
+		buffers = {
+			theme = "dropdown",
+			previewer = false,
+		},
+		colorscheme = {
+			theme = "dropdown",
+			previewer = false,
+		}
+	},
 }

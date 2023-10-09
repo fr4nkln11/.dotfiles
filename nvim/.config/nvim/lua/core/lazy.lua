@@ -14,9 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 local plugins = {
+	'mbbill/undotree',
 	'wbthomason/packer.nvim',
-	'rush-rs/tree-sitter-asm',
 	'onsails/lspkind.nvim',
+	'rush-rs/tree-sitter-asm',
 	{
 		'nvim-telescope/telescope.nvim', version = '0.1.2',
 		dependencies = { {'nvim-lua/plenary.nvim'} }

@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 
 vim.keymap.set('v', '<leader>y', '"+y')
 
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+
 -- window movement keymaps
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', {noremap = true})
 

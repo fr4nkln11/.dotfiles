@@ -122,6 +122,6 @@ export DOWNLOADS="/mnt/c/Users/user/Downloads"
 export NVIM_CONFIG="$HOME/.config/nvim"
 export WIN_HOME="/mnt/c/Users/user"
 export WIN_DEV="$WIN_HOME/dev_home"
-export WIN_TERM_SETTINGS="AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+export WIN_TERM_SETTINGS="$WIN_HOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
