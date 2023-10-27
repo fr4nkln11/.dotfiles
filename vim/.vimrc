@@ -29,27 +29,5 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-colorscheme catppuccin_mocha
 
-"Call Vim-plug
-call plug#begin('~/.vim/plugged')
-	Plug 'dense-analysis/ale'|          "to install ALE
-	Plug 'bstevary/betty-in-vim'|       "to install the script
-	Plug 'wakatime/vim-wakatime'
-	Plug 'SirVer/ultisnips'
-	Plug 'honza/vim-snippets'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'preservim/nerdtree'
-	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-call plug#end()
-
-let g:airline_theme = 'catppuccin_mocha'
-let g:ale_linters = {'c':['betty-style', 'betty-doc', 'gcc']} "add betty to ale linters
-
-"ultisnips config
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+colorscheme desert
