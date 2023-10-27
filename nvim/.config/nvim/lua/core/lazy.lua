@@ -36,7 +36,10 @@ local plugins = {
 	'bstevary/betty-in-vim',
 	'nvim-tree/nvim-web-devicons',
 	'ThePrimeagen/vim-be-good',
-
+	{
+		'numToStr/Comment.nvim',
+		lazy = false,
+	},
 	{
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons', lazy = true }
@@ -89,6 +92,12 @@ local plugins = {
 			'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
 		},
 		version = '^1.0.0', -- optional: only update when a new 1.x version is released
+	},
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		ft = { "markdown" },
+		build = function() vim.fn["mkdp#util#install"]() end,
 	},
 }
 
